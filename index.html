@@ -1,0 +1,98 @@
+<!DOCTYPE html>
+<html lang="es">
+  <head>
+    <meta charset="utf-8">
+    <meta name="viewport" content="width=device-width"/>
+    <meta name='description' content='Juega del ahorcado'>
+    <title>Juego del Ahorcado</title>
+    <link rel="stylesheet" href="style.css">
+  </head>
+  <body>
+
+      <header>
+        <img src="./imgs/LOGO.png" alt="Logo C" id="logo">
+
+      <main class="main">
+
+          <section class="section-iniciar">
+                <div class="botones-iniciar">
+                    <input type='button' value="Iniciar juego" class="btn btn-iniciar">
+                    <input type="button" value="Agr. palabra" class="btn btn-inicio-agregar">
+                </div>
+          </section>
+
+          <section class="section-juego-ahorcado">
+              <div class="div-imagen-ambas">
+                <div class="div-imagen div-imagen-ahrcado">
+                  <img src="imgs/hombre0.png" alt="" class='imagen imagen-ahorcado'>
+                </div>
+              </div>
+                <div class="div-palabra">
+                  <div class="intentos-finjuego">
+                    <p class="intentos-text">Intentos restantes: <span class="intentos"></span></p>
+                  </div>
+                  <p class="parrafo-palabra"></p>
+                </div>
+                <div class="div-pista-botones">
+                  <span class="span-pista"></span>
+                    <div class="botones-juego">
+                      <button class="nuevo-juego btn2">Nuevo juego</button>                 
+                      <button class="desistir btn2">Desistir</button>
+                    </div>
+                  </div>
+                </div>
+
+                <div class="div-abecedario">
+                  <div class="letras-abecedario">
+                    <button id="btn-letra">A</button>
+                    <button id="btn-letra">B</button>
+                    <button id="btn-letra">C</button>
+                    <button id="btn-letra">D</button>
+                    <button id="btn-letra">E</button>
+                    <button id="btn-letra">F</button>
+                    <button id="btn-letra">G</button>
+                    <button id="btn-letra">H</button>
+                    <button id="btn-letra">I</button>
+                    <button id="btn-letra">J</button>
+                    <button id="btn-letra">K</button>
+                    <button id="btn-letra">L</button>
+                    <button id="btn-letra">M</button>
+                    <button id="btn-letra">N</button>
+                    <button id="btn-letra">O</button>
+                    <button id="btn-letra">P</button>
+                    <button id="btn-letra">Q</button>
+                    <button id="btn-letra">R</button>
+                    <button id="btn-letra">S</button>
+                    <button id="btn-letra">T</button>
+                    <button id="btn-letra">U</button>
+                    <button id="btn-letra">V</button>
+                    <button id="btn-letra">W</button>
+                    <button id="btn-letra">X</button>
+                    <button id="btn-letra">Y</button>
+                    <button id="btn-letra">Z</button>
+                  </div>
+                </div>
+          </section>
+
+          <section class="section-agregar-palabra">
+              <div class="div-input-agregar">
+                <input type='text' class='input-agregar-palabra' min-length='4' maxlength='10' oninput="validarInput(this)" placeholder="Ingrese la palabra...">
+              </div>
+              <div class="div-info-agregar-cancelar">
+                <div class="info-descripcion"><img src="imgs/Infologo.png" alt="Información" id="img-info">
+                  <h3 class="descripcion-agregar-palabra">
+                  Las palabras que agregues se eliminarán cuando refresques la página.
+                </h3>
+                </div>
+                <div class="div-botones-agregar-cancelar">
+                  <button class="btn-agregar-jugar" disabled>Agregar y jugar</button>
+                  <button class="btn-cancelar">Cancelar</button>
+                </div>
+            </div>
+          </section>
+
+      </main>
+
+      <script src="script.js"></script>
+  </body>
+</html>
